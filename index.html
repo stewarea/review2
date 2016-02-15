@@ -5,59 +5,70 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Match</title>
+    <title>Travel Match</title>
   </head>
   <body>
     <div class="container-fluid">
       <div class="jumbotron">
-          <h1>Who should you Date?</h1>
+          <h1>Where should you travel next?</h1>
       </div>
     </div>
     <div class="container">
       <form id="match">
-        <label for="gender">Gender</label>
+        <label for="gender">1. What is your gender?</label>
         <select id="gender" class="form-control">
           <option>Male</option>
           <option>Female</option>
+
         </select>
-           <label for="age">Age</label>
-            <input id="age" class="form-control" type="number">
-          <button type="submit" class="btn">See My Celebrity Match</button>
+         <label for="age">2. What is your age?</label>
+            <input id="age" class="form-control" type="number"></br>
+          <div id="food">
+            <label for="food">3. What would be your ideal travel meal?</label></br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              King crab and sauted scallops</br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Fresh tortillas with chile sauce and beans</br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Hot beef broth soup and sweet coffee</br>
+          </div>
+          <div id="activity">
+            <label for="activity">4. What type of travel activity do you like best?</label></br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Learning and exploring ancient ruins</br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Eating</br>
+              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+              Hiking</br>
+          </div>
+          <div id="beach">
+          <label for="beach">5. What's your favorite beach activity?</label></br>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Relaxing and reading a book</br>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            Digging for clams</br>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            I hate the beach</br>
+          </div>
+
+         <button type="submit" class="btn">See my travel match!</button>
       </form>
-      <div id="kit">
-        <h1>Kit Harrington</h1>
-        <img src="img/kit.jpg">
-        <p>
+      <div id="alaska">
+        <h1>Alaska</h1>
+        <img src="img/alaska.jpg">
+        <p>Alaska is often refrered to as the "last frontier" in the United States.  Here you can explore and hike to your heart's content.  Alaska is known for picturesque landscapes, abundant wildlife and amazing seafood.
         </p>
       </div>
-      <div id="lily">
-        <h1>Lily James</h1>
-        <img src="img/lily.jpg">
-        <p>
+      <div id="tikal">
+        <h1>Guatemala</h1>
+        <img src="img/tikal.jpg">
+        <p> Guatemala is a jewel sitting in the middle of centreal america, waiting to be discovered.  It has a rich and complex history, mixing spanish colonial culture with that of the native mayan culture.  The mayan ruins, colorful textiles and amazing coffee are just a few reasons to visit Guatemala.
         </p>
       </div>
-      <div id="idris">
-        <h1>Idris Alba</h1>
-        <img src="img/idris.jpg">
-        <p>
-        </p>
-      </div>
-      <div id="pike">
-        <h1>Rosamund Pike</h1>
-        <img src="img/pike.jpg">
-        <p>
-        </p>
-      </div>
-      <div id="sean">
-        <h1>Sean Connery</h1>
-        <img src="img/sean.jpg">
-        <p>
-        </p>
-      </div>
-      <div id="doris">
-        <h1>Doris Kearns Goodwin</h1>
-        <img src="img/doris.jpg">
-        <p>
+      <div id="vietnam">
+        <h1>Vietnam</h1>
+        <img src="img/vietnam.jpg">
+        <p>If you are a foodie that love to sample local dishes all day long, Vietnam is the place for you.  The endless sea of street vendors cook up various versions of local cuisines, that are sure to please.  Vietnam also offers dramatic coastlines in the north and relaxing beaches in the south.  The mountainous regions to the west offer options to hike and sample the french inspired local dishes.
         </p>
       </div>
     </div>

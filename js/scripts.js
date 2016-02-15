@@ -2,16 +2,20 @@ $(document).ready(function() {
   $("form#match").submit(function(event) {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
+    var meal = $("input#meal").val()
+    var activity = $("input#activity").val()
+    var beach = $(input#activity)/val()
+
 
     if (gender === "Male") {
       if (age < 35) {
-      $('#lily').show();
+      $('#alaska').show();
       }
       if ((36 < age) && (age < 50)) {
-      $('#pike').show();
+      $('#tikal').show();
       }
       if (age > 50) {
-      $('#doris').show();
+      $('#vietnam').show();
       }
     }
 
