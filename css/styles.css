@@ -1,0 +1,23 @@
+img {
+  max-width:600px;
+  float:left;
+}
+
+#kit {
+  display: none;
+}
+#lily {
+  display: none;
+}
+#idris{
+  display: none;
+}
+#pike{
+  display: none;
+}
+#sean{
+  display: none;
+}
+#doris{
+  display: none;
+}
