@@ -2,39 +2,24 @@ $(document).ready(function() {
   $("form#match").submit(function(event) {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
-    var meal = $("input#meal").val()
-    var activity = $("input#activity").val()
-    var beach = $(input#activity)/val()
+    var meal = $("select#meal").val()
+    var activity = $("select#activity").val()
+    var beach = $("select#beach").val()
 
 
-    if (gender === "Male") {
-      if (age < 35) {
+    if ((meal === "crab") && (activity === "hiking" || "museum" || "eating") && (beach === "dig")) {
       $('#alaska').show();
       }
-      if ((36 < age) && (age < 50)) {
+
+    if ((meal === "broth") && (activity === "museum") && (beach === "relax")) {
       $('#tikal').show();
       }
-      if (age > 50) {
+
+    if ((meal === "beans") && (activity === "eating") && (beach === "sand")) {
       $('#vietnam').show();
       }
-    }
 
 
      event.preventDefault();
   });
 });
-
-
-// $(document).ready(function() {
-//   $("form#insurance").submit(function(event) {
-//     var age = parseInt($("input#age").val());
-//     var gender = $("select#gender").val();
-//
-//     var quote = (100 - age) * 3;
-//
-//     $("#rate").empty().append(quote);
-//     $("#quote").show();
-//
-//     event.preventDefault();
-//   });
-// });
