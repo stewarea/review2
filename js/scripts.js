@@ -7,18 +7,21 @@ $(document).ready(function() {
     var beach = $("select#beach").val()
 
 
-    if ((meal === "crab") && (activity === "hiking" || "museum" || "eating") && (beach === "dig")) {
+    if ((meal === "crab") && (activity === "hiking" || "museum" || "eating") && (beach === "dig" || "relax" || "sand")) {
       $('#alaska').show();
       }
 
-    if ((meal === "broth") && (activity === "museum") && (beach === "relax")) {
+    if ((meal === "broth") && (activity === "hiking" || "museum" || "eating") && (beach === "dig" || "relax" || "sand")) {
       $('#tikal').show();
       }
 
-    if ((meal === "beans") && (activity === "eating") && (beach === "sand")) {
+    if ((meal === "beans") && (activity === "hiking" || "museum" || "eating") && (beach === "dig" || "relax" || "sand")) {
       $('#vietnam').show();
       }
 
+    if ((gender === "null") || (meal === "null") || (activity === "null") || (beach === "null")) {
+        alert("Please fill out all of the questions.")
+        }
 
      event.preventDefault();
   });
