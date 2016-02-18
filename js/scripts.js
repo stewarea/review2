@@ -8,9 +8,10 @@ $(document).ready(function() {
 
 
     $(".result").hide();
-
+    $('#match').hide();
     if ((gender === "null") || (meal === "null") || (activity === "null") || (beach === "null")) {
       alert("Please fill out all of the questions.");
+        ("form.match").show();
     }
     else {
       if ((meal === "crab") && (activity === "hiking" || "museum" || "eating") && (beach === "dig" || "relax" || "sand")) {
@@ -25,7 +26,11 @@ $(document).ready(function() {
         $('#vietnam').show();
         }
     }
+    $(".result button").click(function(event) {
+      $(".result").hide();
+        $("form#match").show();
 
+    });
      event.preventDefault();
   });
 });
